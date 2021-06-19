@@ -1,0 +1,57 @@
+﻿Background background
+BackgroundColor background-color
+
+Border border
+BorderTop border-top
+BorderLeft border-left
+BorderRight border-right
+BorderBottom border-bottom
+
+BorderColor border-color
+BorderRadius border-radius
+Bottom bottom
+BoxShadow box-shadow
+
+Color color
+Content content
+Cursor cursor
+
+Display display
+
+Float @float
+
+Height height
+
+Left left
+
+LineHeight line-height
+
+Margin margin
+MarginBottom margin-bottom
+MarginLeft margin-left
+MarginRight margin-right
+MarginTop margin-top
+
+MinHeight min-height
+MaxHeight max-height
+
+Outline outline
+
+Padding padding
+PaddigBottom padding-bottom
+PaddingLeft padding-left
+PaddingRight padding-right
+PaddingTop padding-top
+Position position
+
+Right right
+
+TextAlign text-align
+Top top
+
+VerticalAlign vertical-align
+Visibility visibility
+
+Width width
+
+ZIndex z-index
