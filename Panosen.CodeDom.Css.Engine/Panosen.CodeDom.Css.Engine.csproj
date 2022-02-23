@@ -4,7 +4,7 @@
     <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
     <AssemblyName>Panosen.CodeDom.Css.Engine</AssemblyName>
     <RootNamespace>Panosen.CodeDom.Css.Engine</RootNamespace>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>harriszhang@live.cn</Authors>
     <Company>harriszhang@live.cn</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -24,24 +24,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Panosen.CodeDom.Css\Panosen.CodeDom.Css.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="CssCodeEnginePartial.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CssCodeEnginePartial.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="CssCodeEnginePartial.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CssCodeEnginePartial.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

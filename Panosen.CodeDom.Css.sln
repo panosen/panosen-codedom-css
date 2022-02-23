@@ -7,12 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.CodeDom.Css", "Pano
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.CodeDom.Css.Engine", "Panosen.CodeDom.Css.Engine\Panosen.CodeDom.Css.Engine.csproj", "{9C6F85D8-7043-4C08-8606-19261C2C8F42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{821C8873-E9D4-4FF9-A3D9-D8CEDF59B4C3}"
-	ProjectSection(SolutionItems) = preProject
-		css.ttinclude = css.ttinclude
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panosen.CodeDom.Css.Engine.MSTest", "Panosen.CodeDom.Css.Engine.MSTest\Panosen.CodeDom.Css.Engine.MSTest.csproj", "{D57FF0CB-8F6D-4543-9A2F-A400670C78D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panosen.CodeDom.Css.Engine.MSTest", "Panosen.CodeDom.Css.Engine.MSTest\Panosen.CodeDom.Css.Engine.MSTest.csproj", "{D57FF0CB-8F6D-4543-9A2F-A400670C78D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
