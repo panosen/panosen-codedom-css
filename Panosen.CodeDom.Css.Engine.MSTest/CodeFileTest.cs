@@ -18,7 +18,7 @@ namespace Panosen.CodeDom.Css.Engine.MSTest
                 .AddProperty("float", "right");
 
             codeCssFile.AddCss(".basic", "Test")
-                .AddProperty("margin", "10px")
+                .AddProperty("margin", "10px", "abc")
                 .AddProperty("background-color", "#f00")
                 .AddProperty("float", "right");
 
@@ -46,6 +46,7 @@ namespace Panosen.CodeDom.Css.Engine.MSTest
 .basic {
     background-color: #f00;
     float: right;
+    /* abc */
     margin: 10px;
 }
 ";

@@ -12,6 +12,7 @@ namespace Panosen.CodeDom.Css.Engine.MSTest
             CodeCss codeCss = new CodeCss();
 
             codeCss.Name = ".basic";
+            codeCss.Summary = "abc";
             codeCss.AddProperty("margin", "10px")
                 .AddProperty("background-color", "#f00")
                 .AddProperty("float", "right");
@@ -25,7 +26,8 @@ namespace Panosen.CodeDom.Css.Engine.MSTest
 
         private string PrepareExpected()
         {
-            return @".basic {
+            return @"/* abc */
+.basic {
     background-color: #f00;
     float: right;
     margin: 10px;
