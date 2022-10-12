@@ -12,11 +12,9 @@ namespace Panosen.CodeDom.Css
     public static class CodeCssFileExtension
     {
         /// <summary>
-        /// add css
+        /// AddCss
         /// </summary>
-        /// <param name="codeFile"></param>
-        /// <param name="codeCss"></param>
-        public static CodeCssFile AddCodeCss(this CodeCssFile codeFile, CodeCss codeCss)
+        public static CodeCssFile AddCss(this CodeCssFile codeFile, CodeCss codeCss)
         {
             if (codeFile.CodeCssList == null)
             {
@@ -29,12 +27,9 @@ namespace Panosen.CodeDom.Css
         }
 
         /// <summary>
-        /// add css
+        /// AddCss
         /// </summary>
-        /// <param name="codeFile"></param>
-        /// <param name="name"></param>
-        /// <param name="comment"></param>
-        public static CodeCss AddCodeCss(this CodeCssFile codeFile, string name = null, string comment = null)
+        public static CodeCss AddCss(this CodeCssFile codeFile, string name = null, string summary = null)
         {
             if (codeFile.CodeCssList == null)
             {
@@ -43,7 +38,7 @@ namespace Panosen.CodeDom.Css
 
             CodeCss codeCss = new CodeCss();
             codeCss.Name = name;
-            codeCss.Comment = comment;
+            codeCss.Summary = summary;
 
             codeFile.CodeCssList.Add(codeCss);
 

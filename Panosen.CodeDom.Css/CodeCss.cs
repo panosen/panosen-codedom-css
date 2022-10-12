@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Panosen.CodeDom.Css
 {
     /// <summary>
     /// css 样式
     /// </summary>
-    public partial class CodeCss
+    public class CodeCss
     {
 
         /// <summary>
@@ -16,7 +17,12 @@ namespace Panosen.CodeDom.Css
         /// <summary>
         /// 注释
         /// </summary>
-        public string Comment { get; set; }
+        public string Summary { get; set; }
+
+        /// <summary>
+        /// 属性
+        /// </summary>
+        public List<CodeProperty> PropertyList { get; set; }
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Panosen.CodeDom.Css
 {
@@ -7,14 +8,11 @@ namespace Panosen.CodeDom.Css
     /// </summary>
     public static partial class CodeCssExtension
     {
-
         /// <summary>
-        /// set Name
+        /// 设置名称
         /// </summary>
-        /// <param name="codeCss"></param>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public static TCodeCss SetName<TCodeCss>(this TCodeCss codeCss, string name) where TCodeCss : CodeCss
+        public static TCodeCss SetName<TCodeCss>(this TCodeCss codeCss, string name)
+            where TCodeCss : CodeCss
         {
             codeCss.Name = name;
 
@@ -22,14 +20,33 @@ namespace Panosen.CodeDom.Css
         }
 
         /// <summary>
-        /// set Comment
+        /// 设置注释
         /// </summary>
-        /// <param name="codeCss"></param>
-        /// <param name="comment"></param>
-        /// <returns></returns>
-        public static TCodeCss SetComment<TCodeCss>(this TCodeCss codeCss, string comment) where TCodeCss : CodeCss
+        public static TCodeCss SetSummary<TCodeCss>(this TCodeCss codeCss, string summary)
+            where TCodeCss : CodeCss
         {
-            codeCss.Comment = comment;
+            codeCss.Summary = summary;
+
+            return codeCss;
+        }
+
+        /// <summary>
+        /// 添加属性
+        /// </summary>
+        public static TCodeCss AddProperty<TCodeCss>(this TCodeCss codeCss, string name, string valule, string summary = null)
+            where TCodeCss : CodeCss
+        {
+            if (codeCss.PropertyList == null)
+            {
+                codeCss.PropertyList = new List<CodeProperty>();
+            }
+
+            var property = new CodeProperty();
+            property.Name = name;
+            property.Value = valule;
+            property.Summary = summary;
+
+            codeCss.PropertyList.Add(property);
 
             return codeCss;
         }

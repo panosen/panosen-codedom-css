@@ -12,6 +12,11 @@ namespace Panosen.CodeDom.Css
     public class CodeCssFile
     {
         /// <summary>
+        ///注释
+        /// </summary>
+        public string Summary { get; set; }
+
+        /// <summary>
         /// css 样式
         /// </summary>
         public List<CodeCss> CodeCssList { get; set; }

@@ -14,9 +14,6 @@ namespace Panosen.CodeDom.Css.Engine
         /// <summary>
         /// TransformText
         /// </summary>
-        /// <param name="codeCssFile"></param>
-        /// <param name="options"></param>
-        /// <returns></returns>
         public static string TransformText(this CodeCssFile codeCssFile, GenerationOptions options = null)
         {
             var builder = new StringBuilder();
